@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./tes-style.css">
+    </head>
+<body>
+
+
+
+
+<nav>
+    <div class="logo">
+        <img src="http://epitas.in/wp-content/uploads/2019/04/logo1.png" alt="Epitas" >
+    </div>
+    <button class="btn-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a  href="about.html">About</a></li>
+        <li><a href="feature.html">Feature</a></li>
+        <li><a class="active" href="#">Testimonial</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+ <div id="head" class="head">
+    <h1>What Users Say</h1></div> 
+<section id="test" class="testimonial">
+    
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac leo sed leo pharetra suscipit. Sed sagittis scelerisque metus ut sagittis. Etiam euismod sollicitudin ex at pretium.</p>
+        <h3>ABC</h3>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac leo sed leo pharetra suscipit. Sed sagittis scelerisque metus ut sagittis. Etiam euismod sollicitudin ex at pretium.</p>
+        <h3>ABC</h3>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac leo sed leo pharetra suscipit. Sed sagittis scelerisque metus ut sagittis. Etiam euismod sollicitudin ex at pretium.</p>
+        <h3>ABC</h3>
+    </div>
+</section>
+
+
+</body>
+<script>
+    var test= document.getElementById("test")
+    var head= document.getElementById("head")
+    var menuUL = document.getElementsByTagName("ul");
+    
+		var heightOful = menuUL[0].scrollHeight;
+		var btnToggle = document.getElementsByClassName("btn-toggle");
+		btnToggle[0].addEventListener("click",function(){
+			if(menuUL[0].style.maxHeight){
+				menuUL[0].style.maxHeight = null;
+                test.style.top="300px";
+                head.style.display="block";
+			}
+			else{
+				menuUL[0].style.maxHeight = menuUL[0].scrollHeight + "px";
+                test.style.top="500px";
+                head.style.display="none"
+			}
+		});
+</script>
+</html>

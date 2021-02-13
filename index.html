@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+<body>
+
+
+
+
+<nav>
+    <div class="logo">
+        <img src="http://epitas.in/wp-content/uploads/2019/04/logo1.png" alt="Epitas" >
+    </div>
+    <button class="btn-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feature.html">Feature</a></li>
+        <li><a href="testimonial.html">Testimonial</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+<section class="home">
+    <img id='img' src="./image/1612772535401.png" alt="">
+    <p id="pa">A comprehensive solution for budding programmers to learn how to code quicky</p>
+    <button id="btn">BOOK NOW</button>
+    
+</section>
+
+
+</body>
+<script>
+    var img = document.getElementById('img');
+                var pa = document.getElementById('pa');
+                var btn = document.getElementById('btn');
+    var menuUL = document.getElementsByTagName("ul");
+		var heightOful = menuUL[0].scrollHeight;
+		var btnToggle = document.getElementsByClassName("btn-toggle");
+		btnToggle[0].addEventListener("click",function(){
+			if(menuUL[0].style.maxHeight){
+				menuUL[0].style.maxHeight = null;
+                img.style.marginTop="-200px";
+                pa.style.marginTop="10px";
+                pa.style.display="block";
+                btn.style.display="block";
+			}
+			else{
+				menuUL[0].style.maxHeight = menuUL[0].scrollHeight + "px";
+                
+                img.style.marginTop="100px";
+                img.style.top="100px";
+                pa.style.display="none";
+                btn.style.display="none"
+			}
+		});
+</script>
+</html>

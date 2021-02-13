@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./ab-style.css">
+    </head>
+<body>
+
+
+
+
+<nav>
+    <div class="logo">
+        <img src="http://epitas.in/wp-content/uploads/2019/04/logo1.png" alt="Epitas" >
+    </div>
+    <button class="btn-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="#">About</a></li>
+        <li><a href="feature.html">Feature</a></li>
+        <li><a href="testimonial.html">Testimonial</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+<section id="abt" class="about">
+    <div class="box">
+    <img src="./image/box.png" alt="box">
+    <h1>Pre-Installed</h1>
+    <p>Pre-installed with 5 platforms - Python, C, C++, Java, PHP</p></div>
+    <div class="box"><img src="./image/tec-removebg-preview.png" alt="service">
+    <h1>Technical Support</h1>
+    <p>3-month Tech Support for any set-up problem</p></div>
+    <div class="box"> <img src="./image/linux-removebg-preview.png" alt="linux">
+    <h1>Linux Expert</h1>
+    <p>you an expert in Linux Command Line Programming</p></div>
+    <div class="box"> <img src="./image/program.png" alt="program">
+    <h1>Pre-bundled</h1>
+    <p>with more than 100 sample programs</p>   </div>
+</section>
+
+
+</body>
+<script>
+    var abt=document.getElementById("abt");
+    var menuUL = document.getElementsByTagName("ul");
+    
+		var heightOful = menuUL[0].scrollHeight;
+		var btnToggle = document.getElementsByClassName("btn-toggle");
+		btnToggle[0].addEventListener("click",function(){
+			if(menuUL[0].style.maxHeight){
+				menuUL[0].style.maxHeight = null;
+                abt.style.top="200px";
+			}
+			else{
+				menuUL[0].style.maxHeight = menuUL[0].scrollHeight + "px";
+                abt.style.top="500px";
+               
+			}
+		});
+</script>
+</html>

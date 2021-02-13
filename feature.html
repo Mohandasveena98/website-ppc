@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./fe-style.css">
+    </head>
+<body>
+
+
+
+<div>
+<nav>
+    <div class="logo">
+        <img src="http://epitas.in/wp-content/uploads/2019/04/logo1.png" alt="Epitas" >
+    </div>
+    <button class="btn-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a  href="about.html">About</a></li>
+        <li><a class="active" href="#">Feature</a></li>
+        <li><a href="testimonial.html">Testimonial</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</div>
+
+<section  class="feature">
+    
+    <img id="img" src="./image/1612772535401.png" alt="">
+    <div id="con" class="container">
+        <h1>Why not a Laptop ?</h1>
+        <div class="box1">
+            <p>Epitas strongly believes that having a Linux environment will help the programmer learn coding much faster.</p>
+        </div>
+        <div class="box2">
+            <p>Many students take time to correctly configure their systems. </p>
+        </div>
+        <div class="box3">
+            <p>In a laptop, we need to spend at least 8 to 10 days to complete the Setup for Python, C, C++, Java etc. </p>
+        </div>
+    </div>
+
+</section>
+
+
+</body>
+<script>
+    var img= document.getElementById("img");
+    var con= document.getElementById("con");
+    var menuUL = document.getElementsByTagName("ul");
+    
+		var heightOful = menuUL[0].scrollHeight;
+		var btnToggle = document.getElementsByClassName("btn-toggle");
+		btnToggle[0].addEventListener("click",function(){
+			if(menuUL[0].style.maxHeight){
+				menuUL[0].style.maxHeight = null;
+                img.style.top="150px";
+                con.style.top="200px";
+			}
+			else{
+				menuUL[0].style.maxHeight = menuUL[0].scrollHeight + "px";
+                img.style.top="400px";
+                con.style.top="400px";
+			}
+		});
+</script>
+</html>
