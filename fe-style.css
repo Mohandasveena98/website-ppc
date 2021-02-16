@@ -192,7 +192,7 @@ ul li a.active{
 	}
     .feature{
         display:relative;
-        background-color: white; 
+       text-align: center;
     }
      /* .feature .container{
         background-color: white;
@@ -201,8 +201,9 @@ ul li a.active{
     .feature img{
         background-color: white; 
         position: relative;
-        right: 100px;
-        top: 200px;
+		text-align: center;
+       top: 300px;
+		width: 100%;
        
     }
     .feature .container{

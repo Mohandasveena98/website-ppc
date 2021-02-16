@@ -266,10 +266,10 @@ ul li a.active{
 		
 		
 	}
-	/* .contact .input button{
+	 .contact .input button{
 	
-		margin-left:100px;
-	} */
+		text-align: center;
+	} 
     .contact .phon{
 		position: relative;
 		background-color: white;
