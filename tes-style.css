@@ -111,6 +111,7 @@ ul li a.active{
     grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
     grid-template-rows: auto;
     grid-gap: 40px 40px;
+	text-align: center;
 }
  .head h1{
 	position: absolute;
@@ -125,7 +126,7 @@ ul li a.active{
 	background-color: white;
 	margin-top: 10px;
 	padding: 20px 20px;
-	
+	text-align: center;
 }
 .testimonial .box p{
 	text-align: justify;
@@ -211,3 +212,14 @@ ul li a.active{
     
 }
 
+@media (max-width: 450px)  {
+	.testimonial{
+		grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+		grid-template-rows: auto;
+		grid-gap: 40px 40px;
+	}
+	.testimonial .box{
+		text-align: center;
+		width: 50%;
+	}
+}

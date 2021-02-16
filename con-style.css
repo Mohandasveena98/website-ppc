@@ -219,7 +219,7 @@ ul li a.active{
 		
 	}
 	.contact{
-		background-color: white;
+		
 		align-items: center;
 		top: 100px;
 		width: 100%;
@@ -278,19 +278,62 @@ ul li a.active{
 		margin-left: 0;
 	}
 	.contact .phon h3{
-		margin-left: -200px;
-		margin-top: -50px;
+		margin-left: -130px;
+		margin-top: -45px;
 		
 	}
 	 .contact .phon img{
-		margin-left: -500px;
+		margin-left: -420px;
 		
 	}  
 }
 
  @media (max-width: 607px)  {
+	 nav{
+		 width: 100%;
+	 }
 	.contact .input button{
 
 		margin-left: 40%;
 	} 
 } 
+@media (max-width: 450px)  {
+	.contact .input #fn{
+	
+		
+		width: 100px;
+		height: 15px; 
+	}
+	.contact .input #ln{
+		
+		
+		width: 100px;
+		height: 15px; 
+	}
+	.contact .input #email{
+		
+		width: 204px;
+		height: 15px; 
+		
+	}
+	.contact .input #ta{
+		
+		width: 204px;
+		height: 150px; 
+		
+		
+	}
+	.contact .input button{
+
+		margin-left: 33%;
+	} 
+	.contact .phon h3{
+		margin-left: -100px;
+		margin-top: -38px;
+		
+	}
+	 .contact .phon img{
+		margin-left: -360px;
+		
+	}  
+}

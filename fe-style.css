@@ -199,17 +199,17 @@ ul li a.active{
         
     }  */
     .feature img{
-        background-color: white; 
+        /* background-color: white;  */
         position: relative;
 		text-align: center;
-       top: 300px;
+       top: 100px;
 		width: 100%;
        
     }
     .feature .container{
         position: relative;
         background-color: white;
-        
+        top: 0;
         width: 100%;
        
     }
