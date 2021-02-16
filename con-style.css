@@ -264,13 +264,13 @@ ul li a.active{
 	 .contact .input button {
 		 position: relative;
 	
-		
+		margin-left: 5px;
 	} 
     
 	.contact h3{
 		position: relative;
 		
-		margin-top: -55px;
+		margin-top: -35px;
 		text-align: center;
 	}
 	 .contact img{
@@ -305,6 +305,6 @@ ul li a.active{
 	 .contact img{
 		
 		top:0;
-		margin-left: -150px;
+		margin-left: -250px;
 	}  
 }
