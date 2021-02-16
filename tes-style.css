@@ -135,7 +135,7 @@ ul li a.active{
 
 
 
-@media screen and (max-width: 767px) {
+@media (max-width: 967px)  {
 	ul li {
 		display: inherit;
 		margin-left: 0px;
@@ -182,11 +182,18 @@ ul li a.active{
 		
 		position: relative;
 		width: 100%;
+		top: 350px;
 		left: 0px;
+		
+		grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+		grid-template-rows: auto;
+		grid-gap: 40px 40px;
 	}
-	/* .head h1{
-		display: block;
-	} */
+	.head h1{
+		width: 100%;
+		position: absolute;
+		top: 250px;
+	} 
 	.testimonial .box{
 		margin-left: 80px;
 		width: 70%;

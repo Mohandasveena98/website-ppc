@@ -3,7 +3,7 @@
 }
 
 body {
-	overflow: hidden;  
+	
 	margin: 0px;
 	/* overflow: -moz-scrollbars-none; */
 	max-height: 100vh;
@@ -101,33 +101,22 @@ ul li a.active{
 	
 }
 
-.home{
-    overflow: hidden;  
-   
-   padding: 200px 0;
-}
-.home p{
+
+.home .cont p{
     text-align: center;
     font-size: 50px;
     position: absolute;
-	bottom: 130px;
     left: 0px;
     width: 50%;
+	top: 250px;
 }
 .home img{
-   
-    top: 100px;
     position: absolute;
+	top: 100px;
   right: 0px;
   width: 50%;
 }
-.home button{
-    position: absolute;
-    font-size: 50px;
-    border-radius: 50px;
-   
-    left: 200px;
-    bottom: 100px;
+.home .cont button{
 	background-color: #4CAF50;
   border: none;
   color: white;
@@ -138,6 +127,9 @@ ul li a.active{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 50px;
+  margin-top: 500px;
+  margin-left: 20%;
 }
 
 
@@ -145,7 +137,7 @@ ul li a.active{
 
 
 
-@media screen and (max-width: 767px) {
+@media (max-width: 967px) {
 	ul li {
 		display: inherit;
 		margin-left: 0px;
@@ -188,30 +180,23 @@ ul li a.active{
 		display: block;
 		
 	}
-    .home{
-        align-items: center;
-        overflow: hidden;
-    }
-    .home p{
-        width: 100%;
-        position: relative;
-        font-size:20px ;
-        text-align: center;
-        padding: 10px 100px;
-		top: -0px;
+    
+    .home .cont p{
+		position: relative;
+       width: 100%;
+	   font-size: 30px;
+	   top: 0px;
     }
     .home img{
-        position: relative;
-        width: 80%;
-        margin-left: 10px;
-		margin-top: -200px;
+		position: relative;
+		width: 80%;
+		
 		
     }
-    .home button{
-        position: relative;
-        bottom: 0px;
-        left: 150px;
-		top: -0px;
+    .home .cont button{
+		position: relative;
+		margin-top: 0;
+		margin-left: 35%;
     }
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <link rel="stylesheet" href="./tes-style.css">
     </head>
@@ -56,13 +57,13 @@
 		btnToggle[0].addEventListener("click",function(){
 			if(menuUL[0].style.maxHeight){
 				menuUL[0].style.maxHeight = null;
-                test.style.top="300px";
-                head.style.display="block";
+                test.style.top="350px";
+               head.style.display="block";
 			}
 			else{
 				menuUL[0].style.maxHeight = menuUL[0].scrollHeight + "px";
                 test.style.top="500px";
-                head.style.display="none"
+                head.style.display="none";
 			}
 		});
 </script>

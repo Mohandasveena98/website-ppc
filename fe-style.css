@@ -147,7 +147,7 @@ ul li a.active{
 
 
 
-@media screen and (max-width: 767px) {
+@media (max-width: 967px)  {
 	ul li {
 		display: inherit;
 		margin-left: 0px;
@@ -191,7 +191,7 @@ ul li a.active{
 		
 	}
     .feature{
-        display: relative;
+        display:relative;
         background-color: white; 
     }
      /* .feature .container{
@@ -203,7 +203,7 @@ ul li a.active{
         position: relative;
         right: 100px;
         top: 200px;
-        width: 100%;
+       
     }
     .feature .container{
         position: relative;
