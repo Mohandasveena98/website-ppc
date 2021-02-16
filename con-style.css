@@ -267,7 +267,7 @@ ul li a.active{
 		
 	}
 	 .contact .input button{
-	
+
 		text-align: center;
 	} 
     .contact .phon{
@@ -278,12 +278,19 @@ ul li a.active{
 		margin-left: 0;
 	}
 	.contact .phon h3{
-		margin-left: 25px;
+		margin-left: -200px;
 		margin-top: -50px;
 		
 	}
 	 .contact .phon img{
-		margin-left: -250px;
+		margin-left: -500px;
 		
 	}  
+}
+
+@media (max-width: 607px)  {
+	.contact .input button{
+
+		margin-left: 40%;
+	} 
 }
