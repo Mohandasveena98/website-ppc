@@ -3,6 +3,7 @@
 }
 
 body {
+	overflow: hidden;
 	margin: 0px;
 	/* overflow: -moz-scrollbars-none; */
 	max-height: 100vh;
@@ -217,26 +218,24 @@ ul li a.active{
 	.contact{
 		
 		align-items: center;
-		top: 100px;
+		top: 0px;
 		width: 100%;
 		text-align: center;
 	}
 	.contact h1{
 		position: relative;
-		top:70px;
+		top:30px;
 		
 	}
     .contact .input{
 		position: relative;
 		background-color: white;
 		
-		top: 50px;
+		top: 20px;
 		width: 100%;
 		
 	}
-	.contact .input h3{
-		background-color: white;
-	}
+
 	.contact .input #fn{
 	
 		
@@ -275,7 +274,7 @@ ul li a.active{
 	}
 	 .contact img{
 		position: relative;
-		width: 15%;
+	
 		margin-left: -230px;
 		margin-top: 50px;
 	}  
@@ -288,6 +287,12 @@ ul li a.active{
 	} 
 } 
 @media (max-width: 450px)  {
+	.contact .input{
+		top: 0;
+	}
+	.contact #cont{
+		top: 0;
+	}
 	.contact .input #fn{
 	
 		
@@ -319,13 +324,13 @@ ul li a.active{
 	} 
 	.contact h3{
 		
-		
+		top: 0;
 		margin-top: -40px;
 		
 	}
 	 .contact img{
 		
-		width: 10%;
+		top:0;
 		margin-left: -150px;
 	}  
 }
