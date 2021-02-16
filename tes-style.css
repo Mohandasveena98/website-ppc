@@ -219,7 +219,7 @@ ul li a.active{
 		grid-gap: 40px 40px;
 	}
 	.testimonial .box{
-		text-align: center;
-		width: 50%;
+		margin-left: 15%;
+		width: 70%;
 	}
 }
