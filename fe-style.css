@@ -29,7 +29,7 @@ nav {
 }
 
 .logo img {
-	width: 50%;
+	width: 250px;
 }
 
 ul {
@@ -147,7 +147,7 @@ ul li a.active{
 
 
 
-@media (max-width: 967px)  {
+@media (max-width: 1067px)  {
 	ul li {
 		display: inherit;
 		margin-left: 0px;

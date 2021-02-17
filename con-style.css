@@ -3,7 +3,7 @@
 }
 
 body {
-	overflow: hidden;
+	
 	margin: 0px;
 	/* overflow: -moz-scrollbars-none; */
 	max-height: 100vh;
@@ -27,10 +27,11 @@ nav {
 .logo {
 	float: left;
 	margin-top: 15px;
+	
 }
 
 .logo img {
-	width: 50%;
+	width: 250px;
 }
 
 ul {
@@ -172,7 +173,7 @@ ul li a.active{
 } 
 
 
-@media (max-width: 967px)  {
+@media (max-width: 1067px)  {
 	ul li {
 		display: inherit;
 		margin-left: 0px;
@@ -232,7 +233,7 @@ ul li a.active{
 		background-color: white;
 		
 		top: 50px;
-		width: 100%;
+		width: 90%;
 		
 	}
 
@@ -269,14 +270,14 @@ ul li a.active{
     
 	.contact h3{
 		position: relative;
-		
+		margin-left: 0px;
 		margin-top: -35px;
 		text-align: center;
 	}
 	 .contact img{
 		position: relative;
 	
-		margin-left: -230px;
+		margin-left: -300px;
 		margin-top: 50px;
 	}  
 }
@@ -300,11 +301,11 @@ ul li a.active{
 		
 		top: 0;
 		margin-top: -30px;
-		
+		margin-left: -40px;
 	}
 	 .contact img{
 		
 		top:0;
-		margin-left: -250px;
+		margin-left: -300px;
 	}  
 }
